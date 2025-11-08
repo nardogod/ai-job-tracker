@@ -1,0 +1,35 @@
+# AI Job Tracker - Cursor Rules
+
+## Project Context
+- CLI tool para buscar vagas AI Engineer na Suécia
+- Tech Stack: TypeScript, Node.js, Claude API, SQLite
+- Workflow: TDD (RED-GREEN-REFACTOR)
+
+## Code Standards
+- TypeScript strict mode obrigatório
+- Sempre seguir TDD quando aplicável
+- Testes unitários e de integração obrigatórios
+- Código deve ser type-safe (sem `any` sem justificativa)
+- Usar async/await ao invés de callbacks
+- Tratamento de erros explícito
+
+## File Structure
+- `src/cli/` - CLI entry points
+- `src/core/` - Core business logic
+- `src/services/` - External services (Claude API, SQLite)
+- `src/types/` - TypeScript type definitions
+- `src/utils/` - Utility functions
+- `tests/unit/` - Unit tests
+- `tests/integration/` - Integration tests
+
+## Testing
+- Jest como test runner
+- Coverage mínimo: 80%
+- Testes devem ser isolados e independentes
+- Mock external dependencies
+
+## Git
+- Commits descritivos
+- Branch protection para main
+- PRs devem passar todos os testes
+

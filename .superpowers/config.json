@@ -1,0 +1,36 @@
+{
+  "project": {
+    "name": "ai-job-tracker",
+    "type": "cli-tool",
+    "description": "CLI tool para buscar vagas AI Engineer na Suécia"
+  },
+  "workflow": {
+    "methodology": "TDD",
+    "phases": ["RED", "GREEN", "REFACTOR"]
+  },
+  "techStack": {
+    "language": "TypeScript",
+    "runtime": "Node.js",
+    "api": "Claude API",
+    "database": "SQLite",
+    "testing": "Jest"
+  },
+  "standards": {
+    "typescript": {
+      "strict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true
+    },
+    "testing": {
+      "coverage": 80,
+      "framework": "Jest"
+    }
+  },
+  "directories": {
+    "src": "./src",
+    "tests": "./tests",
+    "config": "./config",
+    "data": "./data"
+  }
+}
+
