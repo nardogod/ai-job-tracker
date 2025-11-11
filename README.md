@@ -634,21 +634,6 @@ graph LR
 - ✅ Delivered **production-ready** application
 - ✅ **100% AI-assisted** development
 
----
-
-## 🔮 **Future Enhancements**
-
-- [ ] **Email Notifications** - Alert when new matching jobs appear
-- [ ] **Job Bookmarking** - Save favorite opportunities
-- [ ] **Application Tracking** - Track application status
-- [ ] **Resume Builder** - Generate tailored resumes
-- [ ] **Company Research** - Deep dive into companies
-- [ ] **Salary Negotiation** - AI-powered salary insights
-- [ ] **Interview Prep** - Company-specific preparation
-- [ ] **Multi-Country Support** - Expand beyond Sweden
-
----
-
 ## 🤝 **Contributing**
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -662,22 +647,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 **Author**
-
-**Nardo Silva**
-
-- 🌐 Portfolio: [your-portfolio.com](https://your-portfolio.com)
-- 💼 LinkedIn: [linkedin.com/in/nardo](https://linkedin.com/in/nardo)
-- 🐱 GitHub: [@nardogod](https://github.com/nardogod)
-- 📧 Email: nardo@example.com
-
----
 
 ## 🙏 **Acknowledgments**
 
