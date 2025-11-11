@@ -8,7 +8,7 @@
 [![Anthropic Claude](https://img.shields.io/badge/Claude-API-orange)](https://www.anthropic.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**🔗 Live Demo:** [ai-job-tracker.vercel.app](https://ai-job-tracker.vercel.app)
+**🔗 Live Demo:** [web-mi85422zx-nardogolds-projects.vercel.app](https://web-mi85422zx-nardogolds-projects.vercel.app)
 
 ---
 
@@ -585,9 +585,10 @@ npm run test:coverage
 ### **Live Application**
 
 - **Platform:** Vercel
-- **URL:** [ai-job-tracker.vercel.app](https://ai-job-tracker.vercel.app)
+- **URL:** [web-mi85422zx-nardogolds-projects.vercel.app](https://web-mi85422zx-nardogolds-projects.vercel.app)
 - **CDN:** Edge Network (Global)
 - **SSL:** Automatic HTTPS
+- **Status:** ✅ Live and accessible
 
 ### **CI/CD Pipeline**
 
@@ -703,6 +704,30 @@ This project demonstrates:
 - 🤖 AI/ML Engineers
 - 🏗️ Software Architects
 - 💼 Technical Leaders
+
+---
+
+## 🔒 **Security Techniques Not Applied**
+
+The following security techniques have been identified but are not currently implemented in this application:
+
+- **Authentication** - User login and authorization
+- **Rate Limiting** - Request throttling and abuse prevention
+- **Input Validation** - Comprehensive data sanitization
+- **CORS Configuration** - Cross-origin resource sharing restrictions
+- **URL Sanitization** - Server-side request forgery prevention
+- **CSRF Protection** - Cross-site request forgery tokens
+- **Data Encryption** - Sensitive information encryption at rest
+- **Security Logging** - Security event monitoring and audit trails
+- **Environment Variable Protection** - API key exposure prevention
+- **SQL Injection Prevention** - Parameterized query enforcement
+- **XSS Protection** - Cross-site scripting mitigation
+- **HTTPS Enforcement** - Secure transport layer (handled by Vercel)
+- **Dependency Auditing** - Vulnerability scanning and updates
+- **SSRF Prevention** - Server-side request forgery protection
+- **Access Control** - Role-based permissions and authorization
+
+**Note:** This application is currently in development/demo phase. These security measures should be implemented before production use.
 
 ---
 
