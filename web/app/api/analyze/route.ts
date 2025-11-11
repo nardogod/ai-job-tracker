@@ -226,9 +226,17 @@ export async function POST(request: NextRequest) {
             job.description?.toLowerCase().includes(skill.toLowerCase())
           ).slice(0, 5);
           
+          // Generate valid UUID for job_id if not present or invalid
+          const { randomUUID } = require('crypto');
+          const jobId = job.id && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(job.id) 
+            ? job.id 
+            : randomUUID();
+          
+          const recommendation: 'strong_apply' | 'apply' | 'maybe' | 'skip' = 
+            randomScore >= 80 ? 'strong_apply' : randomScore >= 70 ? 'apply' : randomScore >= 40 ? 'maybe' : 'skip';
+          
           matchScore = {
-            job_id: job.id || `job-${Date.now()}`,
-            profile_id: profile.id,
+            job_id: jobId,
             overall_score: randomScore,
             skills_match: Math.min(100, randomScore + Math.floor(Math.random() * 10) - 5),
             experience_match: Math.min(100, randomScore + Math.floor(Math.random() * 10) - 5),
@@ -237,7 +245,7 @@ export async function POST(request: NextRequest) {
             requirements_match: Math.min(100, randomScore + Math.floor(Math.random() * 10) - 5),
             matching_skills: matchingSkills.length > 0 ? matchingSkills : profile.skills.slice(0, 3),
             missing_skills: ['Kubernetes', 'Docker'].slice(0, Math.floor(Math.random() * 3)),
-            recommendation: randomScore >= 80 ? 'strong_apply' : randomScore >= 70 ? 'apply' : 'maybe',
+            recommendation,
             details: `Mock analysis for ${job.title} at ${job.company}. Your skills in ${matchingSkills.join(', ') || profile.skills.slice(0, 3).join(', ')} align well with this role. Overall match score: ${randomScore}%.`,
             created_at: new Date(),
           };

@@ -38,7 +38,7 @@ export async function GET(request: NextRequest) {
     const stockholmOnly = searchParams.get('stockholmOnly') === 'true';
     const includeRemote = searchParams.get('includeRemote') === 'true';
 
-    let companies = SWEDISH_LEVER_COMPANIES;
+    let companies: typeof SWEDISH_LEVER_COMPANIES[number][] = [...SWEDISH_LEVER_COMPANIES];
     
     if (companyId) {
       companies = companies.filter(c => c.id === companyId);

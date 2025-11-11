@@ -57,3 +57,6 @@ next-env.d.ts
 
 # Misc
 *.pem
+
+# Local env file with space
+.env local

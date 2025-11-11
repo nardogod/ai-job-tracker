@@ -50,8 +50,8 @@ function ProfileFormComponent({
     e.preventDefault();
     const skillsArray = formData.skills
       .split(",")
-      .map((s) => s.trim())
-      .filter((s) => s.length > 0);
+      .map((s: string) => s.trim())
+      .filter((s: string) => s.length > 0);
 
     // Ensure languages is properly formatted as an object
     const languages = typeof formData.languages === 'object' && formData.languages !== null && !Array.isArray(formData.languages)
